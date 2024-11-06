@@ -2,13 +2,16 @@ package com.springboot.githubcicdactions;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.GetMapping;
+
 
 @SpringBootApplication
 @RestController
 public class GithubCicdActionsApplication {
 
     @GetMapping("/Welcome")
-    public string welcome(){
+    public String welcome(){
         return "Welocme to my world!";
     }
 
